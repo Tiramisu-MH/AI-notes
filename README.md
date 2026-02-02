@@ -4,9 +4,9 @@ AI 助手生成内容的在线笔记库
 
 ---
 
-## 📋 OpenClaw 技能大全（51个）
+## 📋 OpenClaw 技能大全（57个）
 
-*最后更新：2026-02-02*
+*最后更新：2026-02-03*
 
 ### 🤖 AI/语音/文字处理（8个）
 
@@ -108,6 +108,17 @@ AI 助手生成内容的在线笔记库
 |------|------|------|
 | **food-order** | 订餐服务 | ✅ 原装 |
 
+### 📄 文档处理 - Anthropic 官方（6个）
+
+| 技能 | 功能 | 状态 |
+|------|------|------|
+| **anthropic-docx** | Word文档创建/编辑/分析（支持修订、批注）| ✅ 新装 |
+| **anthropic-pdf** | PDF处理/合并/分割/表单填写 | ✅ 新装 |
+| **anthropic-pptx** | PPT创建/编辑（幻灯片演示）| ✅ 新装 |
+| **anthropic-xlsx** | Excel数据处理/公式/可视化 | ✅ 新装 |
+| **anthropic-webapp-testing** | Web应用测试 | ✅ 新装 |
+| **anthropic-skill-creator** | 技能创建器 | ✅ 新装 |
+
 ---
 
 ## 📊 统计
@@ -123,7 +134,8 @@ AI 助手生成内容的在线笔记库
 | 网络/搜索 | 6 |
 | 安全/密码 | 2 |
 | 其他 | 1 |
-| **总计** | **51** |
+| 文档处理 (Anthropic) | 6 |
+| **总计** | **57** |
 
 ---
 
@@ -148,6 +160,41 @@ tts("你好，我是蛋黄！")
 **常用中文语音：**
 - `zh-CN-XiaoxiaoNeural` - 女声（晓晓）
 - `zh-CN-YunyangNeural` - 男声（云扬）
+
+### Anthropic 文档技能套装 📄
+
+Anthropic 官方生产级文档处理技能，需要安装 Python 依赖：
+
+```bash
+pip install python-docx pypdf openpyxl python-pptx pandas
+```
+
+**anthropic-docx** - Word文档处理
+- 创建/编辑 Word 文档
+- 支持修订模式（Track Changes）
+- 批注和格式保留
+
+**anthropic-pdf** - PDF处理
+- 文本/表格提取
+- PDF 合并/分割
+- 表单填写
+
+**anthropic-xlsx** - Excel数据处理
+- 公式和格式化
+- 数据分析和可视化
+- 财务模型标准（蓝/黑/绿/红色约定）
+
+**anthropic-pptx** - PPT演示文稿
+- 幻灯片创建/编辑
+- 模板和样式管理
+
+**anthropic-webapp-testing** - Web应用测试
+- 自动化测试流程
+- 测试用例生成
+
+**anthropic-skill-creator** - 技能创建器
+- 创建自定义 OpenClaw 技能
+- SKILL.md 模板生成
 
 ---
 
