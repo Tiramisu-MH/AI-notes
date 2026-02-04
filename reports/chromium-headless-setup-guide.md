@@ -3,7 +3,7 @@
 > 基于 OpenClaw 框架的无头浏览器部署实践报告  
 > 作者：蛋黄 (Yolk) 🐱  
 > 生成时间：2026-02-04  
-> 适用平台：Linux (WSL2) / macOS / Windows
+> 适用平台：Linux (WSL2) 
 
 ---
 
@@ -59,7 +59,7 @@ df -h
 
 ### 2. Chromium 安装方式
 
-#### Linux (Ubuntu/Debian/WSL2)
+#### Linux (Ubuntu/WSL2)
 
 ```bash
 # 方式 1：通过 apt 安装（推荐，稳定版）
@@ -72,29 +72,10 @@ chromium-browser --version
 # 方式 2：通过 snap 安装（较新版本）
 sudo snap install chromium
 
+# Warning：不要安装 snap 版本的 Chromium！！！ 
+
 # 方式 3：Playwright 自带 Chromium
-# Playwright 会自动下载兼容的 Chromium 版本
-```
-
-#### macOS
-
-```bash
-# 通过 Homebrew 安装
-brew install --cask chromium
-
-# 或通过 Playwright
-pip install playwright
-playwright install chromium
-```
-
-#### Windows
-
-```powershell
-# 通过 Chocolatey
-choco install chromium
-
-# 或手动下载安装包
-# https://www.chromium.org/getting-involved/download-chromium
+Playwright 会自动下载兼容的 Chromium 版本
 ```
 
 ### 3. 依赖安装（Linux 关键步骤）
@@ -115,19 +96,6 @@ sudo apt install -y \
     libasound2 \
     libpangocairo-1.0-0 \
     libgtk-3-0
-
-# CentOS/RHEL/Fedora
-sudo yum install -y \
-    nss \
-    atk \
-    at-spi2-atk \
-    cups-libs \
-    libxcomposite \
-    libxkbcommon-x11 \
-    libxrandr \
-    mesa-libgbm \
-    pango \
-    gtk3
 ```
 
 ---
@@ -147,7 +115,7 @@ sudo yum install -y \
     "headless": true,
     "defaultProfile": "openclaw",
     "color": "#FF4500",
-    "noSandbox": false,
+    "noSandbox": true,
     "attachOnly": false,
     "executablePath": "/usr/bin/chromium-browser",
     "remoteCdpTimeoutMs": 1500,
@@ -167,10 +135,10 @@ sudo yum install -y \
 | 配置项 | 类型 | 默认值 | 说明 |
 |--------|------|--------|------|
 | `enabled` | boolean | true | 启用浏览器控制服务 |
-| `headless` | boolean | false | **无头模式开关** - true = 无界面运行 |
-| `defaultProfile` | string | "chrome" | 默认使用的配置文件 |
+| `headless` | boolean | true | **无头模式开关** - true = 无界面运行 |
+| `defaultProfile` | string | "openclaw" | 默认使用的配置文件 |
 | `executablePath` | string | 自动检测 | Chromium 可执行文件路径 |
-| `noSandbox` | boolean | false | 禁用沙盒（容器环境常用）|
+| `noSandbox` | boolean | true | 禁用沙盒（容器环境常用）|
 | `attachOnly` | boolean | false | 只连接已运行的浏览器 |
 | `cdpPort` | number | 18800+ | Chrome DevTools Protocol 端口 |
 
@@ -362,168 +330,6 @@ sudo timedatectl set-timezone Asia/Shanghai
 
 # 或在启动参数中添加
 --timezone=Asia/Shanghai
-```
-
----
-
-## 崩溃教训
-
-### 💥 教训 1：内存不足导致崩溃
-
-**场景：**
-在 1GB 内存的 VPS 上运行多个无头浏览器实例
-
-**现象：**
-```
-[ERROR:memory.cc(22)] Out of memory
-[1:1:0101/000000.000:FATAL:memory.cc(22)] Out of memory
-```
-
-**解决方案：**
-```json
-{
-  "browser": {
-    "launchOptions": {
-      "args": [
-        "--disable-dev-shm-usage",
-        "--disable-gpu",
-        "--no-first-run",
-        "--no-zygote",
-        "--single-process"
-      ]
-    }
-  }
-}
-```
-
-**预防措施：**
-- 每个浏览器实例至少预留 512MB 内存
-- 使用 `--single-process` 减少内存占用（仅测试环境）
-- 监控内存使用，及时关闭不需要的实例
-
----
-
-### 💥 教训 2：/dev/shm 太小（Docker 环境）
-
-**场景：**
-Docker 容器中运行 Chromium
-
-**现象：**
-页面加载缓慢，频繁崩溃
-
-**解决方案：**
-
-方式 1 - 挂载更大的 tmpfs：
-```bash
-docker run --shm-size=2gb your-image
-```
-
-方式 2 - 禁用 /dev/shm 使用：
-```json
-{
-  "browser": {
-    "launchOptions": {
-      "args": ["--disable-dev-shm-usage"]
-    }
-  }
-}
-```
-
----
-
-### 💥 教训 3：僵尸进程堆积
-
-**场景：**
-长时间运行的服务，频繁启动/关闭浏览器
-
-**现象：**
-系统进程数达到上限，无法再启动新进程
-
-**解决方案：**
-```bash
-# 定期清理僵尸进程
-ps aux | grep "chromium" | grep -v grep | awk '{print $2}' | xargs kill -9
-
-# 使用 tini 作为 init 进程（Docker）
-ENTRYPOINT ["/tini", "--"]
-```
-
-**预防措施：**
-- 复用浏览器实例，不要频繁启闭
-- 设置合理的超时机制
-- 定期监控进程数
-
----
-
-### 💥 教训 4：GPU 进程崩溃
-
-**场景：**
-在某些云服务器上启用 GPU 加速
-
-**现象：**
-```
-[ERROR:gpu_process_host.cc(1002)] GPU process exited unexpectedly
-```
-
-**解决方案：**
-```json
-{
-  "browser": {
-    "launchOptions": {
-      "args": [
-        "--disable-gpu",
-        "--disable-software-rasterizer"
-      ]
-    }
-  }
-}
-```
-
----
-
-### 💥 教训 5：SSL 证书问题
-
-**场景：**
-访问自签名证书的网站
-
-**现象：**
-```
-ERR_CERT_AUTHORITY_INVALID
-```
-
-**解决方案：**
-```json
-{
-  "browser": {
-    "launchOptions": {
-      "ignoreHTTPSErrors": true
-    }
-  }
-}
-```
-
----
-
-### 💥 教训 6：文件描述符限制
-
-**场景：**
-高并发场景下打开大量页面
-
-**现象：**
-```
-Error: EMFILE: too many open files
-```
-
-**解决方案：**
-```bash
-# 临时增加限制
-ulimit -n 4096
-
-# 永久修改
-sudo vim /etc/security/limits.conf
-# 添加：
-* soft nofile 4096
-* hard nofile 8192
 ```
 
 ---
