@@ -186,5 +186,4 @@ URL Reader 是一个**实用的 Claude Code Skill**，特别适合需要**读取
 
 ---
 
-*报告生成时间: 2026-02-06 06:43 CST*  
-*报告路径: /home/claw/.openclaw/workspace/memory/github-url-reader-report.md*
+*报告生成时间: 2026-02-06 06:43 CST*
