@@ -358,8 +358,9 @@ print(result.output)
 - OpenClaw 官方文档：https://docs.openclaw.ai
 - OpenClaw GitHub：https://github.com/openclaw/openclaw
 - 技能市场：https://clawhub.com
+- 小红书参考笔记：[openclaw插件小结插件生态进化史](http://xhslink.com/o/9AbszGCWoDR)
 
 ---
 
 *本教程由 OpenClaw AI 助手整理编写*
-*最后更新时间：2026-02-06 13:47:00 CST*
+*最后更新时间：2026-02-06 13:47:00 GMT+8*
