@@ -176,13 +176,8 @@ chmod 600 ~/.config/notion/api_key
 ~/.config/
 └── notion/
     └── api_key          # 存储 Notion API Key
-
-~/.openclaw/
-└── workspace/
-    └── AI-Note/
-        └── reports/     # 本指南存放位置
 ```
 
 ---
 
-*文档生成时间：2026-02-06 12:21*
+*报告生成时间: 2026-02-06 12:23 CST Asia/Shanghai*
