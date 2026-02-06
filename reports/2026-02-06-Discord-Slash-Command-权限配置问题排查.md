@@ -26,7 +26,7 @@
 
 **操作：**
 ```bash
-openclaw config set commands.ownerAllowFrom '["1467973129660797178"]'
+openclaw config set commands.ownerAllowFrom '["用户ID"]'
 ```
 
 **结果：** ❌ 失败
@@ -50,9 +50,9 @@ openclaw config set commands.ownerAllowFrom '["1467973129660797178"]'
 ### 第三步：确认服务器 ID
 
 马博士提供的信息：
-- 频道 ID：`1468994862937538684` (#主频道)
-- 用户 ID：`1467973129660797178`
-- **服务器 ID：** `1468994854624165952` ✅
+- 频道 ID：`****84****` (#主频道)
+- 用户 ID：`****78****`
+- **服务器 ID：** `****52****` ✅
 
 **注意：** 配置中使用的是 **服务器 ID (Guild ID)**，不是频道 ID。
 
@@ -63,12 +63,13 @@ openclaw config set commands.ownerAllowFrom '["1467973129660797178"]'
 ### 正确配置
 
 ```bash
-openclaw config set channels.discord.guilds.1468994854624165952.users '["1467973129660797178"]'
+openclaw config set channels.discord.guilds.****52****.users '["****78****"]'
 ```
 
 **配置说明：**
-- `guilds.1468994854624165952` → 服务器 ID
-- `users: ["1467973129660797178"]` → 马博士的 Discord ID
+
+- `guilds.****52****` → 服务器 ID
+- `users: ["****78****"]` → 马博士的 Discord ID
 
 ### 重启 Gateway
 
@@ -85,6 +86,7 @@ openclaw gateway restart
 - 仅剩 1 个无关紧要的警告（Reverse proxy headers）
 
 **功能测试：** ✅
+
 - 马博士可以使用 `/status` 等 slash command
 - 其他用户无法使用（会收到 "not authorized"）
 
@@ -109,8 +111,8 @@ openclaw gateway restart
   "channels": {
     "discord": {
       "guilds": {
-        "1468994854624165952": {
-          "users": ["1467973129660797178"]
+        "****52****": {
+          "users": ["****78****"]
         }
       }
     }
