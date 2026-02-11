@@ -1,0 +1,298 @@
+# QMD 语义搜索引擎完全指南
+
+## 概述
+
+**QMD**（Quantum Memory Daemon）是 OpenClaw 的本地语义搜索引擎，用于在本地 Markdown 文件中实现智能搜索。它基于向量嵌入技术，可以理解查询的语义含义，而不只是简单的关键词匹配。
+
+---
+
+## 1. 核心特性
+
+| 特性 | 说明 |
+|------|------|
+| **语义搜索** | 理解自然语言查询意图，而非简单关键词匹配 |
+| **本地优先** | 所有数据存储在本地，无需联网 |
+| **SQLite 后端** | 使用轻量级数据库存储索引 |
+| **多集合支持** | 可配置多个独立搜索集合 |
+| **自动更新** | 支持定时自动更新索引 |
+| **无 API 依赖** | 使用本地模型生成向量嵌入 |
+
+---
+
+## 2. 安装与配置
+
+### 2.1 安装位置
+
+QMD 通常随 OpenClaw 一起安装，无需单独安装：
+- **可执行文件**: `/home/claw/.bun/bin/qmd`
+- **索引数据库**: `/home/claw/.cache/qmd/index.sqlite`
+- **模型缓存**: `/home/claw/.cache/qmd/models/`
+
+### 2.2 OpenClaw 配置
+
+在 `~/.openclaw/openclaw.json` 中配置：
+
+```json
+{
+  "memory": {
+    "backend": "qmd",
+    "qmd": {
+      "command": "/home/claw/.bun/bin/qmd",
+      "includeDefaultMemory": false,
+      "paths": [
+        {
+          "path": "/home/claw/.openclaw/workspace",
+          "name": "workspace",
+          "pattern": "**/*.md,!memory/**/*.md"
+        },
+        {
+          "path": "/home/claw/.openclaw/workspace/memory",
+          "name": "memory",
+          "pattern": "**/*.md"
+        }
+      ],
+      "update": {
+        "interval": "5m",
+        "debounceMs": 15000,
+        "onBoot": true
+      },
+      "limits": {
+        "maxResults": 6,
+        "maxSnippetChars": 700,
+        "timeoutMs": 4000
+      }
+    }
+  }
+}
+```
+
+### 2.3 配置项详解
+
+| 配置项 | 说明 |
+|--------|------|
+| `includeDefaultMemory` | 是否使用默认记忆集合（建议设为 false） |
+| `paths` | 自定义搜索集合列表 |
+| `path` | 集合根目录 |
+| `name` | 集合名称 |
+| `pattern` | 文件匹配模式，支持排除规则 `!path` |
+| `interval` | 自动更新间隔 |
+| `debounceMs` | 防抖时间（毫秒） |
+| `onBoot` | 启动时是否更新索引 |
+| `maxResults` | 最大返回结果数 |
+| `maxSnippetChars` | 片段最大字符数 |
+| `timeoutMs` | 搜索超时时间 |
+
+---
+
+## 3. 常用命令
+
+### 3.1 查看状态
+
+```bash
+qmd status
+```
+
+**输出示例：**
+```
+QMD Status
+
+Index: /home/claw/.cache/qmd/index.sqlite
+Size:  3.8 MB
+
+Documents
+  Total:    36 files indexed
+  Vectors:  99 embedded
+  Updated:  2d ago
+
+Collections
+  memory (qmd://memory/)
+    Pattern:  **/*.md
+    Files:    3 (updated 3d ago)
+  workspace (qmd://workspace/)
+    Pattern:  *.md
+    Files:    10 (updated 4d ago)
+```
+
+### 3.2 搜索文件
+
+```bash
+# 在所有集合中搜索
+qmd search "关键词"
+
+# 在指定集合中搜索
+qmd search "openclaw 配置" -c workspace
+
+# 限制结果数量
+qmd search "记忆" -n 10
+```
+
+**输出示例：**
+```
+qmd://workspace/ai-note/reports/xxx.md:3 #43d53d
+Title: OpenClaw 配置指南
+Score:  61%
+
+@@ -2,4 @@ (1 before, 430 after)
+> 基于 OpenClaw 框架的部署实践报告
+```
+
+### 3.3 列出集合中的文件
+
+```bash
+# 列出 memory 集合的所有文件
+qmd ls memory
+
+# 列出 workspace 集合
+qmd ls workspace
+```
+
+### 3.4 获取文档内容
+
+```bash
+qmd get qmd://memory/2026-02-11.md
+```
+
+---
+
+## 4. 在 OpenClaw 中使用
+
+### 4.1 自动集成
+
+配置完成后，当 AI 检测到需要搜索历史记录时，会自动调用：
+
+```javascript
+memory_search({
+  query: "用户的问题",
+  maxResults: 6
+})
+```
+
+### 4.2 搜索优先级
+
+AI 的工作流（从内到外）：
+
+1. **第一层**：`memory_search` → 搜索本地 QMD 索引
+2. **第二层**：`exec` + `grep` → 本地文件系统搜索
+3. **第三层**：`web_search` → 网络搜索（需要 BRAVE_API_KEY）
+
+### 4.3 典型使用场景
+
+| 场景 | AI 操作 |
+|------|---------|
+| "我之前配置好的 Notion token 在哪？" | 调用 `memory_search("Notion token")` |
+| "我研究什么方向？" | 搜索 MEMORY.md 和 USER.md |
+| "workspace 里关于 xxx 的文档" | 搜索 workspace 集合 |
+
+---
+
+## 5. 常见问题与解决
+
+### 5.1 ENOTDIR 错误
+
+**错误信息：**
+```
+qmd update failed (code 1): ENOTDIR: not a directory, open '/path/to/file.md'
+```
+
+**原因：** QMD 尝试将文件路径当作目录打开，通常是集合配置冲突导致。
+
+**解决方案：**
+1. 设置 `"includeDefaultMemory": false`
+2. 确保不同集合的路径不重叠
+3. 删除旧索引：`rm ~/.cache/qmd/index.sqlite`
+4. 重启 OpenClaw
+
+### 5.2 索引不更新
+
+**检查项：**
+```bash
+# 查看状态
+qmd status
+
+# 确认 update 配置
+# interval: "5m" 表示每5分钟检查一次
+# onBoot: true 表示启动时更新
+```
+
+**手动触发更新：**
+重启 OpenClaw 会自动重建索引。
+
+### 5.3 搜索结果为空
+
+**排查步骤：**
+1. 确认文件路径在配置的 `paths` 中
+2. 确认 `pattern` 匹配文件（如 `**/*.md`）
+3. 检查文件是否被正确索引：`qmd ls <collection>`
+4. 尝试重建索引
+
+### 5.4 性能优化
+
+| 建议 | 说明 |
+|------|------|
+| 减少大文件 | 过大的文件会增加索引时间 |
+| 合理设置 `debounceMs` | 避免频繁更新 |
+| 排除不需要的目录 | 使用 `!path` 排除大目录 |
+| 限制 `maxResults` | 减少返回结果数量 |
+
+---
+
+## 6. 最佳实践
+
+### 6.1 集合设计
+
+**推荐结构：**
+```
+workspace/           → 工作文档（排除 memory/）
+├── AI-Note/
+├── docs/
+└── ...
+
+memory/              → 单独集合
+├── 2026-02-11.md
+├── 2026-02-10.md
+└── ...
+```
+
+**配置示例：**
+```json
+{
+  "paths": [
+    {
+      "path": "/home/claw/.openclaw/workspace",
+      "name": "workspace",
+      "pattern": "**/*.md,!memory/**/*.md"
+    },
+    {
+      "path": "/home/claw/.openclaw/workspace/memory",
+      "name": "memory",
+      "pattern": "**/*.md"
+    }
+  ]
+}
+```
+
+### 6.2 文件命名
+
+- 使用有意义的文件名
+- 包含日期（如 `2026-02-11-项目进度.md`）
+- 便于 QMD 语义理解和检索
+
+### 6.3 维护建议
+
+- **定期备份索引**：`~/.cache/qmd/index.sqlite`
+- **监控索引大小**：过大时考虑清理旧文件
+- **更新 OpenClaw**：获取 QMD 最新版本
+
+---
+
+## 7. 参考资源
+
+| 资源 | 链接 |
+|------|------|
+| OpenClaw 文档 | https://docs.openclaw.ai |
+| QMD 项目 | 随 OpenClaw 一起发布 |
+| 配置参考 | `~/.openclaw/openclaw.json` |
+
+---
+
+*报告生成时间: 2026-02-11 21:00 CST Asia/Shanghai*
