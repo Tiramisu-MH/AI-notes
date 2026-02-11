@@ -1,0 +1,791 @@
+
+@LZRationalnvest (李志 | Rational Investing):
+给大家介绍一个我最近在用的绕过各种媒体付费墙的Chrome插件：Bypass Paywalls Clean。
+
+支持包括Medium、南方周末、《华尔街日报》（WSJ）、《彭博社》（Bloomberg）、《纽约时报》（The New York Times）、《经济学人》（The Economist）等在内的几百个国际知名媒体网站。
+
+开发者就在𝕏上，更新的非常活跃，基本上周更新。
+@Magnolia1234B
+
+安装需要手动操作：
+• Chrome/Edge： 需要下载项目的 ZIP 包，解压后在浏览器的“扩展程序”页面开启“开发者模式”，通过“加载已解压的扩展程序”进行安装。
+• Firefox： 需要通过开发者提供的 .xpi 文件进行手动安装，或者在 Android 端使用支持自定义扩展收藏夹的版本（如 Firefox Nightly）。
+
+之前由于该项目直接挑战了媒体巨头的盈利模式，先后被 GitHub 和 GitLab 封杀，并从 Chrome 和 Firefox 的官方扩展商店中被移除。
+
+大家可以试用一下，非常好用。
+🖼️ https://pbs.twimg.com/media/HAn6KvAaAAASitj.jpg
+🖼️ https://pbs.twimg.com/media/HAn6lX1aQAEqXZi.jpg
+🖼️ https://pbs.twimg.com/media/HAn6ngObsAAzf7r.jpg
+📅 Sun Feb 08 08:57:09 +0000 2026
+🔗 https://x.com/LZRationalnvest/status/2020421632398070117
+──────────────────────────────────────────────────
+
+@QingQ77 (Geek Lite):
+终于看到第三方 OpenClaw 网页端了，原版那个 UI 设置简直是一坨屎。
+
+OpenClaw 的快速 Web 客户端，为用户提供流畅的网页交互体验，技术栈现代，性能优化出色
+
+https://t.co/upE73eoAqp https://t.co/kdIzXq91AX
+🖼️ https://pbs.twimg.com/media/HAnCNYxacAEOTrw.jpg
+📅 Sun Feb 08 04:50:07 +0000 2026
+🔗 https://x.com/QingQ77/status/2020359464487182583
+──────────────────────────────────────────────────
+
+@xiaohu (小互):
+兄弟们，这确实牛P啊，真假难辨...
+
+小师妹献艺，恭贺新春
+
+各位师兄觉得如何？？？
+
+Seedance 2.0 制作的 
+
+作者：虚妄 https://t.co/faGbsI9z5r
+🎬 https://pbs.twimg.com/amplify_video_thumb/2020363314375827457/img/LS--B8DNCGvqMHc3.jpg
+📅 Sun Feb 08 05:06:52 +0000 2026
+🔗 https://x.com/xiaohu/status/2020363680718962991
+──────────────────────────────────────────────────
+
+@AYi_AInotes (阿绎 | AI 进化论):
+刷到Miles大神的这个Claude code Prompt，卧槽太顶了，
+必须分享下，简直是教科书级别，
+这才是Claude code的正确打开方式啊兄弟们，
+咱们很多人用 Claude Code 或 Cursor 觉得不好用，
+估计跟我一样还只是把它当做一个 AI 工具，用指令逻辑驱动，
+Miles这个妙的点是用组织管理的逻辑驾驭 AI，
+不着急让 AI 写代码，
+先花 80% 的篇幅教 AI 怎么做个好员工，比如
+1️⃣ 敢于质疑老板，Challenge assumptions
+2️⃣ 做事有章法，Discovery -> Planning -> Building
+3️⃣ 凡事有交代，Stop and check in
+
+整个 Prompt 的架构也很硬，这里放下内核框架大家感受下，原版 Prompt 我提取出来放评论区̋(ˊ•͈ꇴ•͈ˋ)
+
+1. Role Definition (角色升维)：从 Coder 升级为 Technical Co-Founder。不仅写代码，还负责技术决策和怼老板（Challenge assumptions）
+2. Process Control (流程锁定)：强制分阶段（Discovery -> Planning -> Building...），防止 AI 一上来就瞎写一通
+3. Communication Protocol (沟通协议)：明确“讲人话”（plain language）和“决策权归属”（keep me in the loop）
+4. Anti-Fragile (反脆弱)：预设了“Handle edge cases”、“Not a hackathon project”，要求生产级质量
+
+Anchor Points (物理触点):
+• Hackathon project（反面教材）
+• Real product（交付标准）
+• Technical jargon（被禁止的黑话）
+• Version 1（MVP思维）
+
+Drafting Strategy:
+• Intro: 直接点破本质——这是在雇佣一个CTO，而不是一个码农
+
+• Deconstruction: 分模块拆解（Role, Phases, Rules），每一个点都要解释“为什么这样写比普通 Prompt 强”
+
+• Highlight: 重点强调 Phase 1 的“Challenge assumptions”和 Phase 3 的“Stop and check in”
+
+• Ending: 总结这个 Prompt 的核心心法
+🖼️ https://pbs.twimg.com/media/HAm1yTEaYAEDBZH.jpg
+┌─ QT @milesdeutscher:
+│ Alright - here's my most powerful vibe coding prompt ever.
+│ 
+│ Plug this straight into the new Opus 4.6 model, and you'll literally be able to ship anything.
+│ 
+│ 🖼️ https://pbs.twimg.com/media/HAcIIZHbcAA4xbA.jpg
+└─ https://x.com/milesdeutscher/status/2019591900802801988
+📅 Sun Feb 08 03:55:47 +0000 2026
+🔗 https://x.com/AYi_AInotes/status/2020345793098707305
+──────────────────────────────────────────────────
+
+@RobinAmongStars (冷裂谷的Robin):
+@shengxj1 chrome://flags/里面把glic side panel打开
+📅 Sun Feb 08 02:26:28 +0000 2026
+🔗 https://x.com/RobinAmongStars/status/2020323315941011760
+──────────────────────────────────────────────────
+
+@biggor888 (SamGor):
+爱玩 OpenClaw 的同学们，我提供一个双机热备的思路，就是要开两台 VPS，都安装上 OpenClaw ，并且都都互相给对方配置好 SSH 密钥，让它们互相可以通过 SSH 不用密码交互就可以登录，然后写个监测脚本，让它们互相监控，哪个崩了就 SSH 进去互相修复。
+📅 Sun Feb 08 02:18:30 +0000 2026
+🔗 https://x.com/biggor888/status/2020321309838999660
+──────────────────────────────────────────────────
+
+@sodawhite_dev (苏打白.Dev):
+如何下载视频？ 
+
+再补充一个最难的 
+
+视频号下载，详见下方
+┌─ QT @Jackywine:
+│ 如何下载视频？
+│ 
+│ 抖音视频下载工具：https://t.co/jw6py0nA89
+│ 
+│ 🖼️ https://pbs.twimg.com/media/HAYRXmKacAQK2gY.png
+└─ https://x.com/Jackywine/status/2019320589148909724
+📅 Sat Feb 07 01:42:00 +0000 2026
+🔗 https://x.com/sodawhite_dev/status/2019949736254664767
+──────────────────────────────────────────────────
+
+@XianyuLi (Xiangyu 香鱼🐬):
+哈哈哈，助力锤哥最后6w。哈哈哈
+┌─ QT @lxfater:
+│ 📰 送你保姆级的Clawdbot 的部署教程（免得在闲鱼买）
+└─ https://x.com/lxfater/status/2015949596544110974
+📅 Sat Feb 07 21:09:43 +0000 2026
+🔗 https://x.com/XianyuLi/status/2020243599615783058
+──────────────────────────────────────────────────
+
+@luoleiorg (luolei):
+Clash Master v 1.0.7 发布 🚀
+多重优化，更稳、更轻、更直观。
+📑 全新 Rule Chain Flow 模块: 可视化规则流量链路。
+⚡️ 性能提升: 优化日志处理，I/O负载降低 97.13%。
+🛠️ 自定义: 新增 Favicon 备选项，灵活配置日志存储周期。
+👉 `docker pull foru17/clash-master`
+🔗 https://t.co/h9lvjjJRuD https://t.co/kNSV13DO76
+🖼️ https://pbs.twimg.com/media/HAj9KjUawAAwMxT.jpg
+📅 Sat Feb 07 14:30:35 +0000 2026
+🔗 https://x.com/luoleiorg/status/2020143157279617155
+──────────────────────────────────────────────────
+
+@AppSaildotDEV (AppSail):
+📰 OpenClaw QMD 本地语义搜索 * ZenMux，节省 20 倍 Token 消耗，爽用 Claude Opus 4.6
+📅 Fri Feb 06 01:57:26 +0000 2026
+🔗 https://x.com/AppSaildotDEV/status/2019591232083874179
+──────────────────────────────────────────────────
+
+@lijiuer92 (李韭二):
+把小龙虾🦞灌到Meta的ai眼镜里面
+然后可以实时对话，一键识别商品
+然后在网页端一键下单
+全自动化
+ https://t.co/ESi1fy6BOj
+🎬 https://pbs.twimg.com/amplify_video_thumb/2019880932249853952/img/4pyDRntg9RQFmctP.jpg
+📅 Sat Feb 07 09:35:50 +0000 2026
+🔗 https://x.com/lijiuer92/status/2020068978228658466
+──────────────────────────────────────────────────
+
+@PssBerg (Berg Guo):
+@wangray Tailscale 会和 shadowrocket 的 vpn 冲突，比较难整
+📅 Sat Feb 07 06:21:21 +0000 2026
+🔗 https://x.com/PssBerg/status/2020020035448938882
+──────────────────────────────────────────────────
+
+@wangray (Ray Wang):
+出门在外 Openclaw 崩了怎么办
+
+可以试试 Tailscale + Termius 的搭配
+
+只要确保网关工作正常 IM 渠道就不会失联 https://t.co/0e2V60TjWm
+🖼️ https://pbs.twimg.com/media/HAiKljSacAQEDdW.jpg
+📅 Sat Feb 07 06:08:34 +0000 2026
+🔗 https://x.com/wangray/status/2020016818992370161
+──────────────────────────────────────────────────
+
+@dontbesilent12 (dontbesilent):
+闪电说配置了这个豆包的语音识别模型之后爽飞了
+
+API 是一个小时一块钱，送了20个小时 https://t.co/zfKipSZGeZ
+🖼️ https://pbs.twimg.com/media/HAi3uULacAko1PT.jpg
+📅 Sat Feb 07 09:26:00 +0000 2026
+🔗 https://x.com/dontbesilent12/status/2020066505308959220
+──────────────────────────────────────────────────
+
+@plantegg (plantegg):
+我为什么非要配置一个 tun 模式的科学上网呢？就是为了 Chrome 能启用 Gemini 啊，如图终于可以了，我总结下几个要点：
+1）Google 个人账号语言设置为英语
+2）Chrome 配置中启用 glibc 配置
+3）准备一个美国的代理，一定要用 tun 模式让自己的出口 ip 变为美国
+4）完整关闭 Chrome 再启动
+
+效果如图，整合后可太方便了，tun 模式不会配置的话参考我的转帖，如果没有美国代理，随便买一个美国的云节点，用一个小时就可以了几块钱而已，让 Agent 帮你配置好
+🖼️ https://pbs.twimg.com/media/HAikwaOacAEOJ8e.png
+┌─ QT @plantegg:
+│ 以前科学上网难倒一帮好汉，现在我的提示词：我一般用代理上网，我自己有v2ray 的服务器，现在我需要在我本地的 macos 上部署 Clash 并配置好, 我的 v2ray 配置文件内容是:/tmp/config.json , 请展示你的整个工作过程，我希望从中学到你是怎么配置的
+│ 
+│ 配置结果如图，你不但能科学上网，还学到了很多知识和流程，最后我让他生成一个 README 给我就完事了
+│ 🖼️ https://pbs.twimg.com/media/HAcSl8uacAISnYk.jpg
+└─ https://x.com/plantegg/status/2019603527807774966
+📅 Sat Feb 07 08:07:01 +0000 2026
+🔗 https://x.com/plantegg/status/2020046626241540211
+──────────────────────────────────────────────────
+
+@manateelazycat (Andy Stewart):
+具身智能机器人 iPhone！
+
+库克以后说不定都得感谢这家公司的创意🤣 https://t.co/jV7m2dw1YJ
+🎬 https://pbs.twimg.com/amplify_video_thumb/2019988856771358721/img/4bbT3o4nwguUJ1m5.jpg
+📅 Sat Feb 07 04:19:42 +0000 2026
+🔗 https://x.com/manateelazycat/status/2019989424151679009
+──────────────────────────────────────────────────
+
+@lixinbao_X (李新宝（持续互关）):
+谷歌旗下的 @NotebookLM 官方账号竟然都下场给我点赞了，X 上果然充满无限可能
+
+那么我这条笔记是不是可以这么宣传了
+
+“Google 官方都认可点赞的攻略，你确定不看一下吗？？” https://t.co/hyODBq2ZUA
+🖼️ https://pbs.twimg.com/media/HAgyuaob0AAqFtu.jpg
+┌─ QT @lixinbao_X:
+│ 给大家分享一个使用 NotebookLM 的小技巧。NotebookLM 现在可以生成很漂亮的 PPT，但很多人可能不太会用，导致生成出来的 PPT 往往很不美观。我给大家分享一下写提示词的方法论，大家可以按照下面来进行操作，尤其是要注意这几个关键点：
+│ 
+│ 1. 尽可能让它生成黑色背景（深色模式）的样式。
+│ 2. 总张数最好不要超过 20 张。
+└─ https://x.com/lixinbao_X/status/2019310964299166205
+📅 Fri Feb 06 23:44:42 +0000 2026
+🔗 https://x.com/lixinbao_X/status/2019920214415266271
+──────────────────────────────────────────────────
+
+@marshallrichrds (Marshall Richards):
+ClawPhone is alive.
+
+I installed OpenClaw on a $25 phone and gave it full access to the hardware.
+
+I haven’t explored everything yet, but it’s a cool formfactor for agents to run on. https://t.co/lp1l1z52nJ
+🎬 https://pbs.twimg.com/amplify_video_thumb/2020034425782755328/img/xMhZoj-p6qumJx51.jpg
+📅 Sat Feb 07 07:20:30 +0000 2026
+🔗 https://x.com/marshallrichrds/status/2020034922304426237
+──────────────────────────────────────────────────
+
+@sodawhite_dev (苏打白.Dev):
+产品再多，不是自己的作品。再牛逼都没有意义。
+
+专注自己的作品才有意义。
+
+AI只是工具。
+┌─ QT @dotey:
+│ 📰 每天都有 AI 产品“炸裂”，但我已经不焦虑了
+└─ https://x.com/dotey/status/2019998489027977687
+📅 Sat Feb 07 05:00:30 +0000 2026
+🔗 https://x.com/sodawhite_dev/status/2019999690436329600
+──────────────────────────────────────────────────
+
+@YukerX (Yuker):
+📰 Claude 4.6 最新功能：必须要懂的 Agent Team 小白入门指南（内含完整步骤）
+📅 Sat Feb 07 03:33:47 +0000 2026
+🔗 https://x.com/YukerX/status/2019977867061522525
+──────────────────────────────────────────────────
+
+@PeiwenLu (Peiwen Lu):
+这个必须要推荐一下，勇哥写的懒猫语音输入法，配合豆包语音识别 API，全平台通用，桌面端体验极致的语音输入，vibe coding 加速器。 https://t.co/pLOpdrPE1C
+🖼️ https://pbs.twimg.com/media/HAe_4laXEAAmhi2.jpg
+📅 Fri Feb 06 15:22:57 +0000 2026
+🔗 https://x.com/PeiwenLu/status/2019793944582713362
+──────────────────────────────────────────────────
+
+@indiehackercase (Olivert):
+外刊阅读资料我一直用这个。
+
+https://t.co/cNlkWr8s5A
+
+主要有经济学人，纽约客，连线。其中连线是技术相关的月刊，不少AI方面的文章，文章比较长，有兴趣可以重点阅读。
+┌─ QT @indiehackercase:
+│ 终于搞定了外刊阅读，通过GitHub找到外刊资源，打开原文件就可以在微信读书里阅读，然后就可以在文石Nova里面直接阅读了。
+│ 
+│ 微信阅读还会自动翻译成英中对照，方便得很。 https://t.co/S3JgtTL9yt
+│ 🖼️ https://pbs.twimg.com/media/HAIgRIbbcAAfJ76.jpg
+│ 🖼️ https://pbs.twimg.com/media/HAIgRSkaYAAtSyV.jpg
+└─ https://x.com/indiehackercase/status/2018211079713968335
+📅 Tue Feb 03 07:47:59 +0000 2026
+🔗 https://x.com/indiehackercase/status/2018592286440054934
+──────────────────────────────────────────────────
+
+@dotey (宝玉):
+我虽然不用youmind（更习惯用本地markdown），但经常去学习一下用户分享的各种提示词，挺有收获。👍
+┌─ QT @lifesinger:
+│ 🚀 YouMind 0.8 正式发布
+│ 
+│ 1. 全新的三栏布局，让一切简洁优雅。
+│ 2. 数百个 Skills，让创作者互相学习、持续进化。
+│ 🎬 https://pbs.twimg.com/amplify_video_thumb/2019792426454417408/img/uSN8B50cLlRWAWIG.jpg
+└─ https://x.com/lifesinger/status/2019794606292918684
+📅 Fri Feb 06 22:04:31 +0000 2026
+🔗 https://x.com/dotey/status/2019895003255042270
+──────────────────────────────────────────────────
+
+@MengTo (Meng To):
+📰 How OpenClaw + Codex are changing the way I work as a designer
+📅 Fri Feb 06 15:06:10 +0000 2026
+🔗 https://x.com/MengTo/status/2019789723590697257
+──────────────────────────────────────────────────
+
+@liu10102525 (nene):
+YouMind接入了 X （推特）同步功能。用它可以完成：
+
+1、建立你的【推特大咖知识库】：一键同步 X 所有书签、并按日期自动分组。
+2、制作【精选推特简报】：用YouMind Skill 自动总结书签内容，甚至一键生成华尔街日报排版。
+3、一键【改写大咖推文】：形成有洞见的「读后感」，适合转发、评论、搬运，制作自己的高赞爆文。
+4、制作你专属风格的写推Agent【输入主题，推文直出】：一键同步自己过往所有的推文，提炼总结自己的风格，用自己的风格、批量生成推文。
+
+Skill安装包、和教程视频见thread：
+🖼️ https://pbs.twimg.com/media/HAdy7cIbUAApBfN.jpg
+📅 Fri Feb 06 09:58:49 +0000 2026
+🔗 https://x.com/liu10102525/status/2019712374241120618
+──────────────────────────────────────────────────
+
+@GFWfrog (墙国蛙哈哈🐸(习近平150岁倒计时⏳)):
+🚨 刚才在墙内光速被夹！这本《社会生存躺平指南》太顶了！ 🔥
+
+昨天有个名为“废柴工程师 K”的博主，自称是“烂尾楼业主”，写了一本《社会生存躺平指南》，因为写得太真实、太扎心，发出来号直接没了。 🤐 里面全是实操干货： ✅ 教你怎么在职场“合法摆烂” ✅ 怎么用魔法打败形式主义 ✅ 怎么极限低成本生存
+
+越封杀，越说明这东西戳到了痛处，原版PDF和图片都被抢救下来了。 📁 请协助扩散，给牛马们留本指南！
+
+#躺平 #社会生存 #躺平指南
+😎 匿名投稿
+🖼️ https://pbs.twimg.com/media/HAeVhFSW8AA-BIU.jpg
+🖼️ https://pbs.twimg.com/media/HAeVhBHXAAAToIw.jpg
+🖼️ https://pbs.twimg.com/media/HAeVhBnXoAAvGv0.jpg
+🖼️ https://pbs.twimg.com/media/HAeVhFbWYAA7H_-.jpg
+┌─ QT @GFWfrog:
+│ 紧急扩散！墙内正在疯狂删除这本小册子！
+│ 
+│ 12月30日，一位良心博主 老王谈治安 冒死发布了《 #完全防止张献忠手册 》，详细揭露了中共不敢说的社会崩溃真相，以及普通人如何在无差别杀人中活下来，贴文存活不到一天就被全网封杀，帐号炸号
+│ 
+│ 🖼️ https://pbs.twimg.com/media/G9pwiK4W0AAlKeV.jpg
+│ 🖼️ https://pbs.twimg.com/media/G9pwiEAWsAA-SS5.jpg
+│ 🖼️ https://pbs.twimg.com/media/G9pwiGGXUAAsqZq.jpg
+│ 🖼️ https://pbs.twimg.com/media/G9pwpYEW4AAkYjd.jpg
+└─ https://x.com/GFWfrog/status/2007040443004158326
+📅 Fri Feb 06 12:17:49 +0000 2026
+🔗 https://x.com/GFWfrog/status/2019747356296560793
+──────────────────────────────────────────────────
+
+@waylybaye (Baye):
+我从 2012 年第一次买了 PyCharm 后，就成了 JetBrains 的忠实用户，它的静态检查震惊到我这个 Vim/Emacs 仔了。后来要写前端和 go，就一直订阅 All Products Pack，每年都要交一千多块钱。
+
+这样持续了十几年，直到 AI 改变了编程，正式和 JetBrains 告别了，一个时代的落幕。
+📅 Sat Feb 07 02:54:44 +0000 2026
+🔗 https://x.com/waylybaye/status/2019968039354298583
+──────────────────────────────────────────────────
+
+@mranti (Michael Anti):
+不同系统有不同微信目录，这个程序没测试。最简单的方法是在你的系统的微信文件目录下，打开Claude Code，输入“建立程序，扫描本目录和子目录所有的文件，用MD哈希算下，找到重复文件，然后只保留一个，把多余的放入Duplicate目录。”就好了，程序出现后，运行，然后删除Duplicate目录，完成。
+┌─ QT @Roland_WayneOZ:
+│ 📰 一个skill解决微信重复文件占内存问题
+└─ https://x.com/Roland_WayneOZ/status/2019592094478975256
+📅 Sat Feb 07 01:56:56 +0000 2026
+🔗 https://x.com/mranti/status/2019953495231853045
+──────────────────────────────────────────────────
+
+@9hills (九原客):
+认真读了几个 Anthropic Cowork Skill，写的不错。
+https://t.co/P12JZTfANG
+📅 Fri Feb 06 09:21:53 +0000 2026
+🔗 https://x.com/9hills/status/2019703081865548150
+──────────────────────────────────────────────────
+
+@waylybaye (Baye):
+AI Coding：我从传统的单元测试全面迁移到 BDD（行为驱动测试）上了，让 AI 写 BDD 测试。因为 BDD 的测试结果更可读，很容易验收 AI 的代码。比如我下面截图，一眼就能看出来 AI 是否完成了需求。
+
+搜了下时间线，竟然没有人分享过这个，简单分享下，BDD 是 AI Coding 的最佳伴侣。 https://t.co/MscMllX7OB
+🖼️ https://pbs.twimg.com/media/HASIcnRbEAAVOVD.jpg
+📅 Wed Feb 04 03:32:31 +0000 2026
+🔗 https://x.com/waylybaye/status/2018890382462087348
+──────────────────────────────────────────────────
+
+@Datou (Datou):
+有点厉害啊
+https://t.co/UJPnphoXzV https://t.co/BHPtDz9c8k
+🖼️ https://pbs.twimg.com/media/HAdT60XacBAzxbJ.jpg
+🖼️ https://pbs.twimg.com/media/HAdT7fracAI-bw2.jpg
+🖼️ https://pbs.twimg.com/media/HAdT8iGa4AASxGA.jpg
+🖼️ https://pbs.twimg.com/media/HAdT9ZJbYAA_Ui1.jpg
+┌─ QT @john87445528:
+│ 昨晚通宵达旦，总算完成了史上最严格的参考图相貌锁定，质感炸裂，神态表情全是故事，全元素高精度控制提示词来了，照片和成片如下:👇
+│ 终极整合Prompt（参考图1样貌 × 参考图2风格）
+│ 摄影师角色设定：
+│ 作为世界级时尚摄影师（Steven Meisel/Paolo Roversi/Harley Weir），为**[参考图1人物]**拍摄一组定义性的电影海报风格形象广告。100%严格还原参考图1人物的所有面部特征、发型、体型和独特气质，同时完全复刻参考图2的视觉语言和电影感氛围。
+│ 🖼️ https://pbs.twimg.com/media/HASNHabX0AARwY_.jpg
+└─ https://x.com/john87445528/status/2018894523514921354
+📅 Fri Feb 06 07:31:26 +0000 2026
+🔗 https://x.com/Datou/status/2019675284690333952
+──────────────────────────────────────────────────
+
+@sodawhite_dev (苏打白.Dev):
+好好利用𝕏的搜索功能，你会发现新大陆！
+
+如何在自己喜欢的领域也能快速到5M，正修！
+
+15条找爆款找深度内容的搜索词，拿来即用。 
+使用方法： 
+1. 直接复制搜索词到x搜索框(根据需要修改关键词)去搜索 
+2. 搜索结果选择latest(最新)进行筛选：
+
+中文圈： 4 小时内正在爆发的高质量热议：
+ lang:zh-cn min_faves:300 within_time:4h
+
+24 小时内华语圈最顶级的万赞神贴： 
+lang:zh-cn min_faves:10000 -is:retweet
+
+捕捉中文 AI 圈当下的爆款内容：  
+"AI" OR "提示词" OR "大模型" 
+lang:zh-cn min_faves:500
+
+锁定 12 小时内带图的中文热门帖子：  
+filter:images lang:zh-cn min_faves:500 within_time:12h
+
+排除回复，只看高质量的长贴原创：  
+"关键词" -filter:replies -is:retweet min_faves:100
+
+二、 日区： 
+日区 1 小时内刚起飞的高赞贴（蓝V抢热评神技）： lang:ja min_faves:500 within_time:1h -is:retweet
+
+捕捉日本 4 小时内点赞最高的视觉/图片内容：   
+lang:ja min_faves:2000 filter:images within_time:4h
+
+寻找日区当前的社会民生槽点（极易产生共鸣）：  
+"なにか" OR "最高" 
+lang:ja min_faves:3000
+
+监控日区 24 小时内最热门的二次元动向：  
+#ポケモン OR #イラスト 
+lang:ja min_faves:5000 within_time:24h
+
+锁定日本投资/理财领域的高质量讨论：  
+"資産運用" OR "新NISA" 
+lang:ja min_faves:500
+
+三、 全球/美区： 
+捕捉全球 AI 圈 12 小时内的顶级神贴：  
+"AI" OR "ChatGPT" lang:en min_faves:5000 within_time:12h
+
+寻找美区 4 小时内正在疯传的高权重视频：  
+lang:en min_faves:1000 filter:native_video within_time:4h
+
+搜集全球金融/投资大 V 的最新高赞观点：  
+"Investing" OR "SPY" 
+lang:en min_faves:2000
+
+寻找 4 小时内全球范围内最火的原创内容（全语种）：  "the" OR "の" OR "了" 
+min_faves:5000 -is:retweet within_time:12h
+
+锁定 12 小时内点赞过万的英文技术/干货贴： 
+lang:en min_faves:10000 
+filter:links within_time:12h
+┌─ QT @430Yang:
+│ 我承认这搜索太牛了！
+│ 看到有人发送下面的内容，我搜索一下，发现结果都是乱七八糟的内容，没有一条对自己有价值，也没有一条是自己想看的。
+│ 的确能够搜到，但这些内容与我无关，我也不会输出那样的内容。
+│ 
+└─ https://x.com/430Yang/status/2019734815202070863
+📅 Fri Feb 06 16:57:07 +0000 2026
+🔗 https://x.com/sodawhite_dev/status/2019817645517009313
+──────────────────────────────────────────────────
+
+@cellier_ (Cellier@undefined):
+太可怕了，Claude Opus 4.6 对 AI PPT 市场冲击太大了！
+
+原来 AI PPT 生成分 4 大技术流派：
+
+1. HTML 生成流派
+Gamma、genspark... manus... 大部分的 AI PPT 工具都是这个流派。html 生成相对自由，代码也是目前模型最擅长的，但和原来 ppt ooxml 的格式兼容性会比较差，可编辑性上要做好，相当于要做网页编辑器，也比较麻烦。Gamma 是自定义了一套 block 规则，千篇一律感非常强。
+
+2. 图 PPT 流派
+这个是 nano banana pro 火了之后带来的一个能力，基本各家也都接入了，genspark、manus、kimi... 都支持了，图 ppt 流派都有基础的编辑能力，一般结合 OCR 还有图片识别对象拆解能力来做。
+
+3. 模版填空流派
+这个好理解，就是有模版，然后 AI 按照模版的插槽去填空，类似 Pitch 和 Canva 应该是偏向这个。
+
+4. 模型直接生成 OOXML
+之前各家模型都有尝试做，但效果都很差，用过 ChatGPT 的，生成的 pptx 就很差。所以是各大流派里算是市占率最低的。
+
+但现在 Claude Opus 4.6 的效果，真的震撼到我了，一句 Prompt 生成原生支持 PowerPoint 编辑能力的 PPT。而且我可以让它参考任意网站的风格去生成，里面排版和装饰都富有设计感，简直是虐杀了原来的 HTML 技术方向。
+🖼️ https://pbs.twimg.com/media/HAdIP5ObwAE27HC.jpg
+📅 Fri Feb 06 06:41:48 +0000 2026
+🔗 https://x.com/cellier_/status/2019662794887663963
+──────────────────────────────────────────────────
+
+@aiwarts (卡尔的AI沃茨):
+我16年的老华硕电脑又复活了，Skywork做了一个Gemini 3.0 pro和claude sonnet 4.5的wins cowork，我的终极case，
+
+【如何快速自学一个新领域？】（贴B站链接）用 Yt-Dlp Downloader 下载并整理 B站合集到本地指定文件夹，然后用Gemini 3.0 Pro对每个视频逐段理解并和字幕逐行对齐，凡是字幕未覆盖的关键信息就按时间戳截图命名为 视频名_时间戳_主题.png 并写入要点说明，最后用 Summarize 产出 1页总览+章节目录+每章知识卡片+截图索引表，并用 docx 生成一份可直接分享的 Word 文档保存
+
+比起光是本地文件处理和PPT生成好用多了
+🎬 https://pbs.twimg.com/amplify_video_thumb/2019390829362847744/img/n-BYV6EQFKkGmvpf.jpg
+📅 Thu Feb 05 12:44:28 +0000 2026
+🔗 https://x.com/aiwarts/status/2019391676272251190
+──────────────────────────────────────────────────
+
+@DJWZ (0xGarfield｜加菲众):
+竟然看完了。
+这种教育方法也太独特了……
+ https://t.co/HsCjGR1jRq
+🎬 https://pbs.twimg.com/amplify_video_thumb/2019217063215243264/img/RoIvKI2HR8HBXliK.jpg
+📅 Thu Feb 05 14:58:09 +0000 2026
+🔗 https://x.com/DJWZ/status/2019425317602095592
+──────────────────────────────────────────────────
+
+@geekbb (Geek):
+OpenClaw 可以算是 AI OS 的雏形了吧，或者叫 AI DOS：
+
+Skills → 应用软件
+终端 → Telegram/Discord/WhatsApp 
+进程管理 → Agentic Workflow / Task Planning
+指令集 → 自然语言
+虚拟内存与分页 → RAG
+📅 Fri Feb 06 01:57:40 +0000 2026
+🔗 https://x.com/geekbb/status/2019591292456759564
+──────────────────────────────────────────────────
+
+@kevinma_dev_zh (Kevin Ma):
+参考 ZenMux 官方文档配置起来不踩坑的
+
+https://t.co/bGWBPovmc0
+📅 Fri Feb 06 11:43:22 +0000 2026
+🔗 https://x.com/kevinma_dev_zh/status/2019738685026259209
+──────────────────────────────────────────────────
+
+@kenw_2 (Ken W):
+邵氏武侠风格AIGC工作流公开
+
+（by 大象学长） https://t.co/cpOt1c6I5C
+🎬 https://pbs.twimg.com/amplify_video_thumb/2019713471563063297/img/_TMvvWHfeLJ0Fg7C.jpg
+┌─ QT @kenw_2:
+│ 用AI生成香港邵氏风格的武侠视频，然后教英语，短视频赛道越走越宽了。 https://t.co/jGTvUeASOi
+│ 🎬 https://pbs.twimg.com/amplify_video_thumb/2016232860923965440/img/aDw8sZ4NdCdTjN1R.jpg
+└─ https://x.com/kenw_2/status/2016232915575652746
+📅 Fri Feb 06 10:03:38 +0000 2026
+🔗 https://x.com/kenw_2/status/2019713588303433907
+──────────────────────────────────────────────────
+
+@thekitze (kitze 🛠️ tinkerer.club):
+highly recommend using @openclaw to make a wikibase about your life 💀
+
+i fed it my blog, my podcast, my bio, and 1938413 other things about me. it's super fun to browse your life in the form of wikipedia articles. also kinda creepy idk. https://t.co/LMXtTXBo21
+🖼️ https://pbs.twimg.com/media/HAPQMQ7aQAAFv2w.jpg
+🖼️ https://pbs.twimg.com/media/HAPQMenaIAA2OE3.jpg
+🖼️ https://pbs.twimg.com/media/HAPQMtgbUAAAm-7.jpg
+🖼️ https://pbs.twimg.com/media/HAPQM7SagAAKxaX.jpg
+📅 Tue Feb 03 14:00:18 +0000 2026
+🔗 https://x.com/thekitze/status/2018685981474623967
+──────────────────────────────────────────────────
+
+@FinanceYF5 (AI Will):
+强烈推荐用OpenClaw给自己做一个人生维基 💀
+
+有人把自己的博客、播客、个人简介，还有 1938413 个关于他的东西全喂给了它。用维基百科条目的形式来浏览自己的一生，他表示真的很有意思——不过说实话，也有点瘆人，不知道该怎么形容。 https://t.co/zoXQWcPbM7
+🖼️ https://pbs.twimg.com/media/HAcuKY3bUAAroMb.jpg
+🖼️ https://pbs.twimg.com/media/HAcuKh4acAMiP-J.jpg
+🖼️ https://pbs.twimg.com/media/HAcuKr2aMAANj57.jpg
+🖼️ https://pbs.twimg.com/media/HAcuKzjaYAAog7_.jpg
+📅 Fri Feb 06 04:46:17 +0000 2026
+🔗 https://x.com/FinanceYF5/status/2019633723185197285
+──────────────────────────────────────────────────
+
+@IceBearMiner (小八):
+📰 一个人，调用一支 AI 军队。
+📅 Thu Feb 05 13:53:50 +0000 2026
+🔗 https://x.com/IceBearMiner/status/2019409133355807197
+──────────────────────────────────────────────────
+
+@dddanielwang (DanielW):
+@servasyy_ai 好像现在有国内三家desktop agent了是吗？Skywork, minimax, qoder?
+📅 Fri Feb 06 05:30:14 +0000 2026
+🔗 https://x.com/dddanielwang/status/2019644784072409256
+──────────────────────────────────────────────────
+
+@seekjourney (极客杰尼):
+📰 md2wechat v1.8.0：我把公众号排版 Skill 装进去了 OpenClaw ，支持一键安装！
+📅 Fri Feb 06 04:29:40 +0000 2026
+🔗 https://x.com/seekjourney/status/2019629541116059976
+──────────────────────────────────────────────────
+
+@liyue_ai (李岳):
+📰 5分钟，利用Nano Banana Pro+Grok制作一套微信红包封面。
+📅 Fri Feb 06 07:31:43 +0000 2026
+🔗 https://x.com/liyue_ai/status/2019675357306388768
+──────────────────────────────────────────────────
+
+@XianyuLi (Xiangyu 香鱼🐬):
+@jianhuamert 我自己做的skill，点太多了，有重复信息。人家show的这个demo就太强了。哈哈
+📅 Thu Feb 05 04:10:25 +0000 2026
+🔗 https://x.com/XianyuLi/status/2019262310347600290
+──────────────────────────────────────────────────
+
+@XianyuLi (Xiangyu 香鱼🐬):
+卧槽，我前两天刚写了一个位图改矢量图的skill
+
+好好好
+
+不给活路是吧
+┌─ QT @figma:
+│ Imagine turning any image into a vector (now you actually can)
+│ 
+│ → Convert raster images into editable vectors
+│ → Simplify and control color output https://t.co/aCBK7Na9o8
+│ 🎬 https://pbs.twimg.com/amplify_video_thumb/2019095167001919488/img/eceRWiMZ93mCnpxF.jpg
+└─ https://x.com/figma/status/2019096024590287076
+📅 Thu Feb 05 03:45:01 +0000 2026
+🔗 https://x.com/XianyuLi/status/2019255916894552434
+──────────────────────────────────────────────────
+
+@penny777 (Penny777 🦊):
+分享一个用龙虾 @openclaw 爬数据的小技巧：
+
+龙虾在读取网页信息的时候，有两种方式：一个是 Chrome 的插件，另一个是「内置浏览器」。
+
+这两个功能看上去差不多，但实际上是两个不同的。插件需要手动开启，而且容易掉线，需要人工再次刷新和开启。
+
+内置浏览器权限更大，直接自动化操作。
+
+但是龙虾一般会优先「Chrom 插件」，最好的办法就是当你需要从前端获取数据的时候，明确告诉龙虾：用「内置浏览器」的方式，完成这个任务就 ok 了。
+
+简简单单。
+┌─ QT @penny777:
+│ 龙虾 @openclaw  官方平台 Claw Hub 上面的 skills 安全隐患挺多的，尤其针对 Crypto 玩家定点狙击。
+│ 
+│ 建议可以：
+│ 
+│ 🖼️ https://pbs.twimg.com/media/HAShHAlbcAATLnD.jpg
+└─ https://x.com/penny777/status/2018918052218503365
+📅 Fri Feb 06 05:32:22 +0000 2026
+🔗 https://x.com/penny777/status/2019645320821633421
+──────────────────────────────────────────────────
+
+@huangyihe (huangyihe):
+单独用Typeless，它就只是一个AI语音转文字的工具。但当它和Chrome配合起来，就变成了一套完整的工作流，非常方便。 https://t.co/MXMYHFDsp1
+🎬 https://pbs.twimg.com/amplify_video_thumb/2019371050753232896/img/KCzAcdYKVnrgKLMc.jpg
+📅 Thu Feb 05 11:30:37 +0000 2026
+🔗 https://x.com/huangyihe/status/2019373088492999123
+──────────────────────────────────────────────────
+
+@YuLin807 (Qingyue):
+#clawdbot #openclaw
+
+推荐养龙虾的小伙伴，使用编程工具来 minitor 自己龙虾的状态，不管你是去更新系统还是当龙虾出现异常进行错误查找，或者就像这位朋友讲的，配置文件中加用户ID 限制，简单高效保护隐私，可以很快打成指令。
+
+提示词的本质也是让AI理解自然语言再转化成编程语言去执行，涉及一层转化在里边会压缩信息有可能造成 miss，而且使用的模型不同龙虾的智能也参差不齐。龙虾对你喂的提示词领悟不同，也有可能造成错误操作。
+
+假如你是在本地部署，那么claude code和谷歌的Antigravity相当推荐。
+
+像我一样部署在vps可以使用免费版本的opencode或者OpenAI昨晚发力的codex等工具。
+
+还有一个最大的好处，你会对自然语言编程这事儿感到上瘾，代码的世界原来这么有趣！
+
+https://t.co/AH71PnTup1
+🖼️ https://pbs.twimg.com/media/HAckJfBagAAetj2.jpg
+🖼️ https://pbs.twimg.com/media/HAckJfBbAAAMnXQ.jpg
+┌─ QT @flateaves:
+│ @YuLin807 多严格的提示词都是有漏洞的，在配置文件里面加个限制用户id就行了
+└─ https://x.com/flateaves/status/2019612386320347280
+📅 Fri Feb 06 04:02:40 +0000 2026
+🔗 https://x.com/YuLin807/status/2019622747039756501
+──────────────────────────────────────────────────
+
+@vista8 (向阳乔木):
+Claude Agent team太强了！
+
+完全不是用Prompt虚拟几个Agent配合，而是真的几个Agent交流，且跟Subagent也不一样。
+
+Subagent 像派出去的侦察兵
+
+给它一个任务，它干完了把结果交给你，任务结束。
+侦察兵之间不会聊天，也不会质疑对方的情报。
+
+Agent Teams 像一个项目组
+
+每个成员都是独立的个体，有自己的记忆、自己的判断。他们可以直接给彼此发消息，可以开会讨论，可以反驳对方的观点。
+🖼️ https://pbs.twimg.com/media/HAc0VxgacAQ4IRZ.jpg
+📅 Fri Feb 06 05:19:49 +0000 2026
+🔗 https://x.com/vista8/status/2019642162674336244
+──────────────────────────────────────────────────
+
+@alupbn121 (不等 AI 离子):
+试了一下这套提示词，文字排版要额外设计，懒，不想处理了 https://t.co/Tn4C02vpY4
+🖼️ https://pbs.twimg.com/media/HAYU-tdacAI0Ccu.jpg
+┌─ QT @john87445528:
+│ 昨晚通宵达旦，总算完成了史上最严格的参考图相貌锁定，质感炸裂，神态表情全是故事，全元素高精度控制提示词来了，照片和成片如下:👇
+│ 终极整合Prompt（参考图1样貌 × 参考图2风格）
+│ 摄影师角色设定：
+│ 作为世界级时尚摄影师（Steven Meisel/Paolo Roversi/Harley Weir），为**[参考图1人物]**拍摄一组定义性的电影海报风格形象广告。100%严格还原参考图1人物的所有面部特征、发型、体型和独特气质，同时完全复刻参考图2的视觉语言和电影感氛围。
+│ 🖼️ https://pbs.twimg.com/media/HASNHabX0AARwY_.jpg
+└─ https://x.com/john87445528/status/2018894523514921354
+📅 Thu Feb 05 08:17:48 +0000 2026
+🔗 https://x.com/alupbn121/status/2019324566112506124
+──────────────────────────────────────────────────
+
+@tuzi_ai (兔妹_兔子):
+330 万阅读量哦。
+
+有木有国产那个 APP 可以复现下效果？ https://t.co/Oh7zjCjN0I
+🖼️ https://pbs.twimg.com/media/HAZ_rytXwAAeqX3.jpg
+┌─ QT @OKU_MAYA:
+│ 100枚の名刺や60枚の領収書を5分でリスト化できるGeminiが凄い。写真ではなく、動画撮影してリスト化してもらう流れ。家計簿を作ってる人もレシート読み込めばすぐ終わる。スピードが速すぎる衝撃でメガネ割れた。詳しいやり方を説明します。 https://t.co/MY5R61UYNH
+│ 🎬 https://pbs.twimg.com/amplify_video_thumb/2019093378559012864/img/exp4cNUIgswY4v-l.jpg
+│ 🖼️ https://pbs.twimg.com/media/HAVCvCLacAYp-zN.jpg
+└─ https://x.com/OKU_MAYA/status/2019153993428045960
+📅 Thu Feb 05 16:05:16 +0000 2026
+🔗 https://x.com/tuzi_ai/status/2019442207791476902
+──────────────────────────────────────────────────
+
+@OKU_MAYA (オクシン):
+100枚の名刺や60枚の領収書を5分でリスト化できるGeminiが凄い。写真ではなく、動画撮影してリスト化してもらう流れ。家計簿を作ってる人もレシート読み込めばすぐ終わる。スピードが速すぎる衝撃でメガネ割れた。詳しいやり方を説明します。 https://t.co/MY5R61UYNH
+🎬 https://pbs.twimg.com/amplify_video_thumb/2019093378559012864/img/exp4cNUIgswY4v-l.jpg
+🖼️ https://pbs.twimg.com/media/HAVCvCLacAYp-zN.jpg
+📅 Wed Feb 04 21:00:00 +0000 2026
+🔗 https://x.com/OKU_MAYA/status/2019153993428045960
+──────────────────────────────────────────────────
+
+@iamcheyan (徹言):
+加了一个模型监控，这样能随时了解他的健康状态了。
+希望他茁壮成长，永不生病！ https://t.co/J2EpmMqLAp
+🖼️ https://pbs.twimg.com/media/HAUkq5QbEAA1eWv.jpg
+┌─ QT @iamcheyan:
+│ 测试结果： https://t.co/fKdOeH01P0
+│ 🖼️ https://pbs.twimg.com/media/HAPB8eAbUAAdhVw.jpg
+└─ https://x.com/iamcheyan/status/2018670309738741936
+📅 Wed Feb 04 14:48:20 +0000 2026
+🔗 https://x.com/iamcheyan/status/2019060460566495726
+──────────────────────────────────────────────────
+
+@iamcheyan (徹言):
+小龙虾🦞养成记 https://t.co/JlYbPKwgLe
+🖼️ https://pbs.twimg.com/media/HAccCJ3bMAA8jI0.jpg
+🖼️ https://pbs.twimg.com/media/HAccCJ4acAc_jYo.jpg
+🖼️ https://pbs.twimg.com/media/HAccCJ2bIAAvJYq.jpg
+┌─ QT @iamcheyan:
+│ 孩子还挺关心我的。 https://t.co/rDa7x7lhs2
+│ 🖼️ https://pbs.twimg.com/media/HAYxiTlasAAgx29.jpg
+└─ https://x.com/iamcheyan/status/2019355954505216232
+📅 Fri Feb 06 03:27:04 +0000 2026
+🔗 https://x.com/iamcheyan/status/2019613787675062352
+──────────────────────────────────────────────────
+
+@mranti (Michael Anti):
+今天完成一个小成绩：Zoom视频手把手把一个文科生小白在Mac上装上了OpenClaw，成功接入了Kimi、Telegram。
+📅 Fri Feb 06 02:49:54 +0000 2026
+🔗 https://x.com/mranti/status/2019604435958387020
+──────────────────────────────────────────────────
+
+@dotey (宝玉):
+nanobot 是香港大学数据科学实验室（HKUDS）开源的一个超轻量级个人 AI 助手，灵感来自 Clawdbot（OpenClaw 项目），但代码量只有约 4000 行，比 Clawdbot 的 43 万行精简了 99%。
+
+核心卖点：
+极简但功能完整——支持多 LLM 提供商（OpenRouter、Anthropic、OpenAI、DeepSeek、Gemini、Groq 等）、本地模型（vLLM）、多渠道接入（Telegram、WhatsApp、飞书）、网页搜索、定时任务、持久记忆和 Skills 扩展，全部用很少的代码实现。
+
+典型使用场景包括： 实时市场分析、全栈开发辅助、日程管理、个人知识库问答。
+
+部署方式很简单： pip install nanobot-ai 安装后，配置一个 JSON 文件填入 API Key，就能通过命令行聊天或挂载到 Telegram 等渠道 24/7 运行。也支持 Docker 部署。
+
+这是一个面向研究和学习的项目，代码干净可读，适合想理解 AI Agent 架构的开发者拿来学习和二次开发。项目刚发布几天（2026 年 2 月 2 日上线），还在快速迭代中。
+
+https://t.co/xTVdMHuuMi
+🖼️ https://pbs.twimg.com/media/HAaW2UCWgAAxa6b.jpg
+📅 Thu Feb 05 17:48:01 +0000 2026
+🔗 https://x.com/dotey/status/2019468065310740597
+──────────────────────────────────────────────────
+
+@wangray (Ray Wang):
+📰 怒省1亿！保姆级教程让 OpenClaw 节省10倍 Token 消耗
+📅 Sat Jan 31 15:40:38 +0000 2026
+🔗 https://x.com/wangray/status/2017624068997189807
+──────────────────────────────────────────────────
+
+@geekbb (Geek):
+📰 Awesome OpenClaw Skills 有哪些新手最值得安装的技能
+📅 Thu Feb 05 12:40:56 +0000 2026
+🔗 https://x.com/geekbb/status/2019390784915796259
+──────────────────────────────────────────────────
+
+@HuangMonor (X探员):
+https://t.co/6adMS1DIkw
+🖼️ https://pbs.twimg.com/media/HAYQQ5qaAAAAsz6.jpg
+📅 Thu Feb 05 07:57:11 +0000 2026
+🔗 https://x.com/HuangMonor/status/2019319378165326241
+──────────────────────────────────────────────────
